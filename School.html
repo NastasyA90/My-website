@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Style.css">
+        <style>
+h1 {
+    color: dodgerblue;
+    font-size: 50;
+}
+p {
+    color: grey;
+}
+#pirmais-paragrafs {
+font-size: 25;
+margin-top: 0;
+}
+#pirmais-paragrafs:hover{
+font-size: 35px;
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+    background-color: deeppink;
+}
+#sidebar {
+    width: 30%;
+    height: 600px;
+    background-color: gold;
+    float: left;
+}
+#content {
+    width: 70%;
+    height: 600px;
+    background-color: lime;
+    margin-left: 30%;
+}
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: orangered;
+}
+h1{
+    margin-top: 0;
+}
+li:hover{
+    text-decoration: underline;
+}
+.Latvija{
+    width: 500px;
+}
+.picture-1{
+    width: 50px;
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+.map {
+    position: relative;
+}
+.picture-2 {
+    width: 60px;
+    position: absolute;
+    top: 180px;
+    left: 370px;
+}
+.Sprīdītīs {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+    width: 100px;
+    animation-name: go;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes go {
+    from {
+top: 0px;
+left: 0px;
+    }
+    25% {
+        top: 5px;
+        left: 400px;
+    }
+    50% {
+top: 180px;
+left: 400px;
+    }
+    75% {
+top: 180px;
+left: 0px;
+    }
+    to {
+top: 0px;
+left: 0px;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: palegreen;
+    }
+    #sidebar{
+        display: none;
+    }
+    #content{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>School - Skola - Школа</h1> 
+        </div>
+        <div id="sidebar"></div>
+        <div id="content">
+            <p id="pirmais-paragrafs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque esse architecto fugit quod magnam, numquam voluptatibus voluptas rem quam, aliquid ducimus earum qui minus fuga. Repellat sed nulla facere ipsam
+            </p>
+            <ul>
+                <li class="red">Pirmais elements</li>
+                <li class="red">Otrais elements</li>
+                <li>Trešais elements</li>
+            </ul>
+            <div class="map">
+                <img class="Latvija" src="Images/map.jpg" alt="">
+                <img class="picture-1" src="Images/house.png" alt="">
+                <img class="picture-2" src="Images/tree.svg" alt="">
+                <img class="Sprīdītīs" src="Images/sprīdītis.png" alt="">
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>
